@@ -1,7 +1,7 @@
-@import './vendor/normalize';
-@import './partials/colors';
-@import './partials/mixins';
-@import './partials/typography';
+@use './vendor/normalize';
+@use './partials/colors';
+@use './partials/mixins';
+@use './partials/typography';
 
 body {
   max-width: 1170px;

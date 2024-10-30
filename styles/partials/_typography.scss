@@ -1,3 +1,6 @@
+@use 'colors';
+@use 'mixins';
+
 @import url('https://fonts.googleapis.com/css?family=Marck+Script|Montserrat:400,700|Roboto:400,700|Dosis:400,700&display=swap');
 
 $heading_primary_font: 'Montserrat', sans-serif;
@@ -9,15 +12,15 @@ $heading_tertiary_font: 'Roboto', sans-serif;
 $paragraph_primary_font: 'Dosis', sans-serif;
 
 h1 {
-  @include font_type($heading_primary_font, white, 24px);
+  @include mixins.font_type($heading_primary_font, white, 24px);
 }
 h2 {
-  @include font_type($heading_secondary_font, $secondary-color, 18px);
+  @include mixins.font_type($heading_secondary_font, colors.$secondary-color, 18px);
 }
 h3 {
-  @include font_type($heading_tertiary_font, white, 10px);
+  @include mixins.font_type($heading_tertiary_font, white, 10px);
 }
 
 p {
-  @include font_type($paragraph_primary_font, $primary-text-color, 14px);
+  @include mixins.font_type($paragraph_primary_font, colors.$primary-text-color, 14px);
 }
